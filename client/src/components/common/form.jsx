@@ -48,7 +48,8 @@ function CommonForm({
                 [getControlItem.name]: value,
               })
             }
-           value={value}>
+            value={value}
+          >
             <SelectTrigger className="w-full">
               <SelectValue placeholder={getControlItem.placeholder} />
             </SelectTrigger>
@@ -114,7 +115,7 @@ function CommonForm({
         }
       </div>
       <Button type="submit" className="mt-2 w-full">
-        {buttonText}
+        {buttonText || "Submit"}
       </Button>
     </form>
   );
